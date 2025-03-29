@@ -22,4 +22,4 @@ Hovering over variables and functions will show the type or function declaration
 
 ## Limitations
 This extension does not implement a LSP Server for Select Transform strings meaning that there is some limitations as to what can be done.
-Most notably when using the extension there will be a temporary JavaScript file open to be able to get diagnostics for the JavaScript.
+Most notably when using the extension there will be a temporary JavaScript file open to be able to get diagnostics for the JavaScript templates.
