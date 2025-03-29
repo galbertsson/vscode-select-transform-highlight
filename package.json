@@ -1,0 +1,40 @@
+{
+    "name": "vscode-select-transform-highlight",
+    "displayName": "Select Transform Highlight",
+    "description": "",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.97.0"
+    },
+    "activationEvents": ["onLanguage:typescript", "onLanguage:javascript"],
+    "main": "./out/extension.js",
+    "contributes": {
+        "grammars": [
+            {
+                "path": "./syntaxes/highlight-js.json",
+                "scopeName": "inline-js.injection",
+                "injectTo": ["source.js", "source.ts"],
+                "embeddedLanguages": {
+                    "meta.embedded.js": "javascript"
+                }
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "biome check --fix"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "1.9.4",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "20.x",
+        "@types/vscode": "^1.97.0",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.4.1",
+        "typescript": "^5.7.3"
+    },
+    "dependencies": {}
+}
