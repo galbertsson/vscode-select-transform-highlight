@@ -3,11 +3,12 @@
     "displayName": "Select Transform Highlight",
     "description": "",
     "license": "MIT",
+    "icon": "pictures/logo.png",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/galbertsson/vscode-select-transform-highlight"
     },
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "vscode": "^1.97.0"
     },
